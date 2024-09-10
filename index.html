@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>FutRoute</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>FutRoute</h1>
+        <p>Encontre a rota até o estádio do seu time!</p>
+    </header>
+
+    <main>
+        <section id="entrada-dados">
+            <h2>Digite sua cidade e o Nome do seu Time</h2>
+            <form id="form-rota">
+                <input type="text" id="origem" name="origem" placeholder="Digite o endereço de origem">
+                <input type="text" id="nome-time" name="nome-time" placeholder="Nome do time">
+                <button type="submit">Traçar Rota</button>
+                <button type="button" id="btn-navegar">Iniciar Rota</button>
+            </form>
+        </section>
+        
+        <div id="resultados-rota"></div>
+
+        <section id="mapa">
+            <!-- area de exibição do mapa -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Matheus Almeida. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNLyc6RnhY_wxtKF4DREy_bX1l7tJtU0w&libraries=places&callback=initMap">
+    </script>
+</body>
+</html>

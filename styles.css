@@ -1,0 +1,110 @@
+/* styles.css */
+body {
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #686868;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garantir que o corpo ocupe pelo menos a altura da tela */
+}
+
+header {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    background-color: #4F4F4F;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    flex: 1; /* Permitir que o main cresça e preencha o espaço disponível */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#form-time {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+button {
+    background-color: #363636;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px; /* Espaçamento entre os botões */
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #1C1C1C;
+}
+
+#mapa {
+    margin-top: 20px;
+    height: 400px;
+    background-color: #ddd;
+}
+
+/* Estilos do Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+
+/* Media query para dispositivos muito pequenos */
+@media (max-width: 480px) {
+    header {
+        font-size: 14px; /* Reduzir o tamanho da fonte do header */
+    }
+    input[type="text"] {
+        padding: 5px;
+        margin: 6px 0;
+    }
+    button {
+        padding: 6px 12px;
+        font-size: 14px; /* Reduzir o tamanho da fonte do botão */
+    }
+    #mapa {
+        height: 200px; /* Reduzir ainda mais a altura do mapa em telas muito pequenas */
+    }
+}
+
+/* Fontes */
+.anton-sc-regular {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .poppins-regular {
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
